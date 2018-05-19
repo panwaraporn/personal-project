@@ -1,0 +1,128 @@
+body{ /* กำหนดค่าbody */
+    font-family: 'Patrick Hand', cursive;/*Google web font*/
+    display: grid; /*กำหนดให้bodyเป็นรูปแบบgrid*/
+    grid-template-rows: 200px 500px 100px; /*กำหนดให้bodyมีแถว 3 แถว และมีขนาดตามลำดับ*/
+    background-repeat: no-repeat; 
+    text-align: center; /*กำหนดให้ตัวอักษรอยู่กึ่งกลาง*/
+    background-color: #003333; /*กำหนดสีพื้นหลัง */
+}
+header { /*กำหนดค่า header */
+    font-size: 60px; /*กำหนดขนาดตัวอักษร*/
+    color: #99FFCC; /*กำหนดสีตัวอักษร*/
+    margin: auto; /*กำหนดระยะห่างจากขอบเป็น auto*/
+    padding: auto; /*กำหนดระยะห่างจากขอบในเป็น auto*/
+}
+footer{ /*กำหนดค่า footer */
+    text-align: center; /*กำหนดให้ตัวอักษรอยู่กึ่งกลาง*/
+    font-size: 10px; /*กำหนดขนาดตัวอักษร*/
+    margin: auto;/*กำหนดระยะห่างจากขอบเป็น auto*/
+    padding: auto;/*กำหนดระยะห่างจากขอบในเป็น auto*/
+    color: #99FFCC;/*กำหนดสีตัวอักษร*/
+}
+footer p{ /*กำหนดตัวอักษรของfooter*/
+    font-size: 15px;/*กำหนดขนาดตัวอักษร*/
+    text-decoration: none; /* ทำให้ไม่มีขีดเส้นใต้ข้อความ */
+    color: #99FFCC; /*กำหนดสีตัวอักษร*/
+}
+section { /* กำหนดค่า section */
+    border: solid #CCCCCC; /*กำหนดสีกรอบ*/
+    padding: 10px 10px; /*กำหนดระยะห่างจากขอบใน*/
+    border-radius: 8px 8px 2px; /*กำหนดส่วนโค้งของขอบ*/
+}
+section:hover { /* กำหนดค่าสีเมื่อคลิกในกล่อง */
+    border: solid #FFCC99; /*กำหนดสีของขอบ*/
+    background: #663333; /*กำหนดสีของพื้นหลัง*/
+}
+.menu{ /*กำหนดค่าส่วนของmenu*/
+    display: grid; /*กำหนดให้bodyเป็นรูปแบบgrid*/
+    grid-template-columns: 200px 200px 200px 200px 200px; /*กำหนดให้มี colums 5 colums มีขนาดตามลำดับ*/
+    grid-template-rows: 100px; /*ให้อยู่ในบรรทัดเดียวกัน*/
+    margin: auto; /*กำหนดระยะห่างจากขอบเป็น auto*/
+    padding: auto;/*กำหนดระยะห่างจากขอบในเป็น auto*/
+    font-size: 10px;/*กำหนดขนาดตัวอักษร*/
+    text-decoration-line : block; /*ให้อยู่กึ่งกลาง*/
+}
+.ppaa{
+    text-decoration: none; /* ทำให้ไม่มีขีดเส้นใต้ข้อความ */
+    color: #99FFCC; /*กำหนดสีตัวอักษร*/
+    font-size: 15px;/*กำหนดขนาดตัวอักษร*/
+}
+.icon{
+    display: block; /*กำหนดให้bodyเป็นรูปแบบblock*/
+    margin: auto; /*ทำให้ รูปอยู่กึ่งกลาง*/
+    max-width: center;
+    width: 50px; /*กำหนดความกว้าง*/
+    height: 50px; /*กำหนดความสูง*/
+}
+#p1,#p2,#p3,#p4,#p5{/*กำหนดค่าid #p1,#p2,#p3,#p4,#p5*/
+    margin: 1.0em;
+    padding: 0.5em;
+}
+
+/* ทำ responsive web */
+@media screen and (min-width: 750px) {  /*จะมีการใช้งานก็ต่อเมื่อจอขนาดใหญ่กว่า 750px */
+    header {
+      text-align: center;
+      font-size: 50px;
+    }
+    section {
+      width: 30%;
+      float: center;
+    }
+    .ppaa {
+      display: inline-block;
+    }
+    .icon {
+    display: block;
+  }
+}
+  
+@media screen and (max-width: 750px) {  /*จะมีการใช้งานก็ต่อเมื่อจอขนาดเล็กกว่า 750px */
+    header p{
+        text-align: center;
+        font-size: 50px;
+        margin:50px;
+    }
+    .icon {
+     display: block;
+        width: 30px;
+        height: 30px;
+    }
+    #p1,#p2,#p3,#p4,#p5{
+        margin: 1.0em;
+        padding: 1.0em;
+    }
+    .menu {    
+        display: grid;
+        grid-template-columns: 100px;/*กำหนดให้มี colums 1 colums*/
+        grid-template-rows: 100px 100px 100px 100px 100px; /*กำหนดให้มี 5 rows*/
+        font-size: 10px;
+        margin:auto;
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {  /*จะมีการใช้งานก็ต่อเมื่อจอขนาดเล็กกว่า 450px */
+    header p{
+        text-align: center;
+        font-size: 40px;
+        margin:50px;
+    }
+  .icon {
+        display: block;
+        width: 20px;
+        height:20px;
+    }
+    #p1,#p2,#p3,#p4,#p5{
+        margin: 1.0em;
+        padding: 0.5em;
+    }
+    .menu { /*กำหนดค่าmenuใหม่*/
+        display: grid;
+        grid-template-columns: 100px;/*กำหนดให้มี colums 1 colums*/
+        grid-template-rows: 75px 75px 75px 75px 75px; /*ให้มี 5 บรรทัด*/
+        font-size: 10px;
+        margin:auto;
+        padding: auto;
+  }
+}

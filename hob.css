@@ -1,0 +1,74 @@
+/*body{
+    width: 650px;
+    margin: 0 auto;
+    background: black;
+    color: #FFF;
+    font: 20px sans-serif;
+}
+*/
+body{ /* กำหนดค่าbody */
+    margin: 0;
+    font: normal 16 "Technic";
+   /* background-image: url(P%20E%20R%20S%20O%20N%20A%20L99.png);*/
+   /* background-size: contain;*/
+    background-repeat: no-repeat;
+    text-align: center; 
+    background-color: pink;
+   
+}
+header{
+    padding: 10px 0px;
+    font-size: 50px;
+    color: greenyellow;
+    border: 2px solid red
+    }
+
+h2{
+    font-size: 18px;
+    margin-top: 0;
+    color: rosybrown
+    }
+li{
+    font-size: 20px;
+    margin-top: 0;
+    color: red
+}
+section{
+    margin: 20px 0px;
+    padding: 30px 20px 30px 20px;
+    border: 2px solid #FFF; 
+}
+footer{
+    margin: 20px 0px;
+    padding: 30px 20px 30px 20px;
+    border: 2px solid red;  
+}
+
+@media screen and (min-width:750px){ /* สำหรับใช้จอขนาด 1200 px ขึ้นไป เป็น Responsive design*/
+    
+    .li {  /* ทำให้เมนูตอนจอ1200px อยู่บันทัดเดียวกัน เเล้วกำหนดเส้นให้*/
+        padding-right: 10px;
+         display: inline-block; /* อยู่บันทัดเดียวกัน */
+         border-right-style: solid ;
+         border-width: 2px;
+         border-color: floralwhite;
+    
+     
+     }
+     #p3/* ที่มากำนหนด li แยกเพื่อไม่ต้องการให้มีเส้นกรอบเหมือนกับ li ตัวอื่น */
+     {
+           padding-right: 10px;
+         display: inline-block;
+         
+     }
+     .li{ /* กำหนดขนาดฟ้อนให้กับ claa a*/
+         font-size: 28px;
+     }
+     body{  /* กำหนดให้กับ body เพื่อให้ได้ภาพพื้นหลังที่มีขนาดใหญ่ */
+     height: 600px;
+         }
+     .header{
+         padding-top: 250px;
+     }
+   
+ }
